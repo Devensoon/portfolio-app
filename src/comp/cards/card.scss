@@ -1,0 +1,54 @@
+.container {
+    width: 345px;
+    height: auto;
+    position: relative;
+    margin-right: 13px;
+    z-index: 1;
+    top: 18px;
+    
+
+    .card {
+        margin-top: 32px;
+        cursor: pointer;
+
+        .img {
+            border: none;
+            background: none;
+        }
+        .active {
+            border: 7px solid #4fe24a;
+            border-radius: 2%;
+            background: #4fe24a;
+        }
+
+        .card-items {
+            z-index: 2;
+            bottom: 25px;
+            position: absolute;
+
+            h1 {
+                margin-left: 47px;
+                font-size: 40px;
+                line-height: 48px;
+                color: #ffffff;
+                font-weight: 800;
+                font-family: "Epilogue", sans-serif;
+            }
+
+            button {
+                cursor: pointer;
+                width: auto;
+                height: 38px;
+                margin-left: 47px;
+                border-radius: 19px;
+                background-color: #ffffff;
+                font-size: 16px;
+                line-height: 32px;
+                color: #391400;
+                font-weight: 400;
+                font-family: "Epilogue", sans-serif;
+                border: none;
+            }
+        }
+    }
+}

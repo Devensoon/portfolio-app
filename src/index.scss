@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: "DejaVu Sans";
+	src: url("../public/font/dejavu_sans.woff2") format("woff2"), url("../public/font/dejavu_sans.woff") format("woff"),
+		url("../public/font/dejavu_sans.ttf") format("truetype");
+}
+
+* {
+	overflow: none;
+	list-style-type: none;
+	text-decoration: none;
+	outline: none;
+}
+
+.app {
+	width: 100%;
+
+	header {
+		width: auto;
+		height: 400px;
+		background-color: #28293e;
+
+		.nav {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			top: 12px;
+			width: 100vw;
+
+			.logo {
+				margin-left: 136px;
+			}
+
+			.items {
+				justify-content: center;
+
+				a {
+					cursor: pointer;
+					margin-right: 105px;
+					font-size: 16px;
+					line-height: 32px;
+					color: #ffffff;
+					font-weight: 400;
+					font-family: "DejaVu Sans";
+				}
+			}
+
+			.btn {
+				margin-right: 136px;
+				button {
+					cursor: pointer;
+					font-family: "Epilogue", sans-serif;
+					font-size: 14px;
+					color: #ffffff;
+					font-weight: 900;
+					text-align: center;
+					width: 138px;
+					height: 48px;
+					border-radius: 6px;
+					background-color: #00000000;
+					border: 1px solid #ffffff;
+				}
+			}
+		}
+
+		.title {
+			width: 100%;
+			height: 330px;
+			text-align: center;
+
+			h1 {
+				margin-top: 114px;
+				font-size: 72px;
+				letter-spacing: -2px;
+				line-height: 80px;
+				color: #ffffff;
+				font-weight: 800;
+				font-family: "Epilogue", sans-serif;
+				text-align: center;
+			}
+
+			p {
+				margin: 0 auto;
+				width: 570px;
+				height: 66px;
+				font-size: 16px;
+				line-height: 32px;
+				color: #ffffff;
+				font-weight: 400;
+				font-family: "Epilogue", sans-serif;
+				text-align: center;
+			}
+		}
+	}
+
+	.wrapp {
+		width: 81%;
+		max-width: 1450px;
+		height: auto;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.btn-open {
+		margin-top: 80px;
+		width: 100%;
+		text-align: center;
+
+		button {
+			cursor: pointer;
+			width: 170px;
+			height: 48px;
+			border-radius: 6px;
+			filter: drop-shadow(0px 3px 5px rgba(57, 20, 0, 0.08));
+			background-color: #ffffff;
+			/* text */
+			font-size: 14px;
+			color: #391400;
+			font-weight: 900;
+			font-family: "Epilogue", sans-serif;
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.app {
+		width: 100%;
+		header {
+			width: 100%;
+			max-width: 1040px;
+			.nav {
+				max-width: 1040px;
+				.logo {
+					justify-content: none;
+					margin: 0 auto;
+				}
+				.items {
+					display: none;
+				}
+
+				.btn {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.app {
+		header {
+			.title {
+
+				p {
+					width: 425px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.app {
+		header {
+			.title {
+
+				p {
+					width: 375px;
+				}
+			}
+		}
+	}
+}
